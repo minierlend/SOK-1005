@@ -82,7 +82,7 @@ lm(deaths_per_100k ~ fully_vaccinated_pct_of_pop, data=Covid_death)
 #det er en negativ linære korrelasjon i dette tilfellet, men har høy spredning. 
 #hvis man skal tro på denne modellen, som vi gjør. vil det si at hvis 45% prosent av populasjonen er vaksinerte,
 #vil nesten 15 personer dø per 100k. Intercept er bare tallet der dødsfall per 100k treffer y aksen. så det vil si:
-#hvis 0 prosent av populasjonen er vaksinert, vil 31 personer død hvis vi følger vår regressjonsmodell. 
+#hvis 0 prosent av populasjonen er vaksinert, vil 31 personer død per 100k hvis vi følger vår regressjonsmodell. 
 
 
 
