@@ -4,6 +4,10 @@ library(rvest)
 
 
 #leser datasettet
+## Denne oppgaven er jobbet i sammarbeid med Jørgen Johansen og Morten Ivarrud.  
+
+
+
 
 bil <- read_html("https://www.motor.no/aktuelt/motors-store-vintertest-av-rekkevidde-pa-elbiler/217132")
 
