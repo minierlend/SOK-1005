@@ -42,8 +42,8 @@ filtrert$stopp <- as.numeric(filtrert$stopp)
 plot <- filtrert %>% 
   ggplot(aes(x= WLTP, y=stopp)) +
   geom_point(size=1.7, alpha= 0.9, color="dark red") +
-  scale_x_continuous(breaks = seq(250, 700, 100), limits=c(250, 650)) + 
-  scale_y_continuous(breaks = seq(250, 700, 100), limits=c(250, 650)) +
+  scale_x_continuous(breaks = seq(250, 650, 100), limits=c(250, 650)) + 
+  scale_y_continuous(breaks = seq(250, 650, 100), limits=c(250, 650)) +
   theme_bw() +
   geom_abline(intercept = 0, slope= 1, size = 0.5, color="dark blue") +
   labs(title= "temp. varierte fra 0?? til -10??") +
