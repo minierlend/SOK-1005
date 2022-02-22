@@ -62,10 +62,18 @@ plot + geom_smooth(method=lm, se = TRUE,
                                                                                     labels = c("i fargen svart"),
                                                                                     guide = "legend")
 
+lm(stopp ~ WLTP, data = filtrert)
+
+
+
 
 ## Etter og ha sett regresjonslinja ser vi at kjørelengde ligger litt under hva bil produsentene indikerer at den vil kjøre.
 ## det forbruker ofte opplever er at WLTP ikke tar hensyn til dekkdimensjon og utstyrsmodifisering som forbruker ofte har.
 ##det vi ser i regresjonslinja er at bilene ligger  ganske likt på linja, litt under den antatte kjørelengden. 
+##det vi ser er at stigningstallet er 0.86 og dette betyr at kjøring i kaldt vær har en 13.3% gjennomsnittlig minsket kjørelengde
+##iforhold til WLTP tallene. 
+
+
 
 
 ##kilder: 
