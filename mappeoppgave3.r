@@ -42,8 +42,8 @@ filtrert$stopp <- as.numeric(filtrert$stopp)
 plot <- filtrert %>% 
   ggplot(aes(x= WLTP, y=stopp)) +
   geom_point(size=1.7, alpha= 0.9, color="dark red") +
-  scale_x_continuous(breaks = seq(200, 700, 100), limits=c(250, 650)) + 
-  scale_y_continuous(breaks = seq(200, 700, 100), limits=c(250, 650)) +
+  scale_x_continuous(breaks = seq(250, 700, 100), limits=c(250, 650)) + 
+  scale_y_continuous(breaks = seq(250, 700, 100), limits=c(250, 650)) +
   theme_bw() +
   geom_abline(intercept = 0, slope= 1, size = 0.5, color="dark blue") +
   labs(title= "temp. varierte fra 0?? til -10??") +
@@ -63,8 +63,16 @@ plot + geom_smooth(method=lm, se = TRUE,
                                                                                     guide = "legend")
 
 
+## Etter og ha sett regresjonslinja ser vi at kjørelengde ligger litt under hva bil produsentene indikerer at den vil kjøre.
+## det forbruker ofte opplever er at WLTP ikke tar hensyn til dekkdimensjon og utstyrsmodifisering som forbruker ofte har.
+##det vi ser i regresjonslinja er at bilene ligger  ganske likt på linja, litt under den antatte kjørelengden. 
 
 
+##kilder: 
+# https://stackoverflow.com/questions/49985671/how-to-remove-specific-words-in-a-column
+# https://www.r-bloggers.com/2018/07/creating-legends-when-aesthetics-are-constants-in-ggplot2/
+# https://statisticsglobe.com/convert-character-to-numeric-in-r/
+#https://stackoverflow.com/questions/14717217/converting-from-a-character-to-a-numeric-data-frame
 
 
 
