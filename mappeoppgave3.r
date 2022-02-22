@@ -13,8 +13,7 @@ view(filtrert)
 
 #filtrerer navnene 
 
-#df %>%
-  #mutate(Imp_Office = str_remove_all(Imp_Office, " Country| Office"))
+
 
 filtrert <- filtrert %>% 
   rename(WLTP = `WLTP-tall`) 
