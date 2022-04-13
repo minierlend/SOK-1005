@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="705971cb-066d-4454-9781-c566ca64aa80" data-root-id="1002"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1205">
+          {"b62a14c4-eb97-4b06-bb7b-a68df9635209":{"defs":[],"roots":{"references":[{"attributes":{"label":{"field":"country_no"},"renderers":[{"id":"1029"}]},"id":"1041","type":"LegendItem"},{"attributes":{"coordinates":null,"data_source":{"id":"1024"},"glyph":{"id":"1026"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"1028"},"nonselection_glyph":{"id":"1027"},"view":{"id":"1030"}},"id":"1029","type":"GlyphRenderer"},{"attributes":{"tools":[{"id":"1021"}]},"id":"1022","type":"Toolbar"},{"attributes":{"data":{"Andel_befolkning":{"__ndarray__":"uB6F61F4MkAzMzMzM7MxQAAAAAAAABFAFK5H4XoUDECkcD0K16MGQNejcD0K1wVAH4XrUbgeBUDhehSuR+EAQOxRuB6F6/0/ZmZmZmZm+j8=","dtype":"float64","order":"little","shape":[10]},"Density (P/Km\u00b2)":[153,464,36,151,287,25,226,1265,9,66],"Fert. Rate":["1.7","2.2","1.8","2.3","3.6","1.7","5.4","2.1","1.8","2.1"],"Land Area (Km\u00b2)":[9388211,2973190,9147420,1811570,770880,8358140,910770,130170,16376870,1943950],"Med. Age":["38","28","38","30","23","33","18","28","40","29"],"Migrants (net)":{"__ndarray__":"AAAAALxDFcEAAAAAnkEgwQAAAABsIy1BAAAAALAo+MAAAAAAGH0MwQAAAAAAtNRAAAAAAABM7cAAAAAAdI0WwQAAAADARQZBAAAAAABM7cA=","dtype":"float64","order":"little","shape":[10]},"Population":[1440297825,1382345085,331341050,274021604,221612785,212821986,206984347,164972348,145945524,129166028],"Urban Pop %":["61 ","35 ","83 ","56 ","35 ","88 ","52 ","39 ","74 ","84 "],"World Share":["18.47 ","17.70 ","4.25 ","3.51 ","2.83 ","2.73 ","2.64 ","2.11 ","1.87 ","1.65 "],"colors":["#E14827","#FAEBD7","#CD3333","#CDAA7D","#8A3324","#FFC125","#00C957","#8B5742","#FFFAFA","#D02090"],"country":["China","India","United States","Indonesia","Pakistan","Brazil","Nigeria","Bangladesh","Russia","Mexico"],"country_no":["Kina","India","USA","Indonesia","Pakistan","Brasil","Nigeria","Bangladesh","Russland","Mexico"],"index":[0,1,2,3,4,5,6,7,8,9],"pop_mill_str":["1,440","1,382","331","274","221","212","206","164","145","129"],"size":{"__ndarray__":"2RTelkSgX0CgXmFctvteQKD5w4iEVk5ADuliUt6WS0CmqXvCpM9IQK3GeHFkUEhAN0PHp276R0AiUaRdLGhFQAkl7ZZ4IkRAdDE/iR7xQkA=","dtype":"float64","order":"little","shape":[10]}},"selected":{"id":"1039"},"selection_policy":{"id":"1038"}},"id":"1024","type":"ColumnDataSource"},{"attributes":{"num_minor_ticks":10},"id":"1014","type":"LogTicker"},{"attributes":{},"id":"1033","type":"BasicTickFormatter"},{"attributes":{"below":[{"id":"1013"}],"center":[{"id":"1016"},{"id":"1020"},{"id":"1040"}],"height":580,"left":[{"id":"1017"}],"renderers":[{"id":"1029"}],"title":{"id":"1003"},"toolbar":{"id":"1022"},"width":980,"x_range":{"id":"1005"},"x_scale":{"id":"1009"},"y_range":{"id":"1007"},"y_scale":{"id":"1011"}},"id":"1002","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1009","type":"LogScale"},{"attributes":{},"id":"1018","type":"BasicTicker"},{"attributes":{},"id":"1011","type":"LinearScale"},{"attributes":{},"id":"1038","type":"UnionRenderers"},{"attributes":{"callback":null,"tooltips":[["Land","@country_no"],["Andel av jordas befolkning i prosent","@Andel_befolkning"],["Befolkning","@pop_mill_str"]]},"id":"1021","type":"HoverTool"},{"attributes":{},"id":"1037","type":"AllLabels"},{"attributes":{"axis_label":"Median alder","coordinates":null,"formatter":{"id":"1033"},"group":null,"major_label_policy":{"id":"1034"},"ticker":{"id":"1018"}},"id":"1017","type":"LinearAxis"},{"attributes":{},"id":"1007","type":"DataRange1d"},{"attributes":{"coordinates":null,"group":null,"text":"Populasjon og areal 10 st\u00f8rste landene"},"id":"1003","type":"Title"},{"attributes":{},"id":"1039","type":"Selection"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"field":"colors"},"hatch_alpha":{"value":0.1},"hatch_color":{"field":"colors"},"line_alpha":{"value":0.1},"line_color":{"field":"colors"},"size":{"field":"size"},"x":{"field":"Fert. Rate"},"y":{"field":"Med. Age"}},"id":"1027","type":"Scatter"},{"attributes":{"axis":{"id":"1017"},"coordinates":null,"dimension":1,"group":null,"ticker":null},"id":"1020","type":"Grid"},{"attributes":{"axis":{"id":"1013"},"coordinates":null,"group":null,"ticker":null},"id":"1016","type":"Grid"},{"attributes":{},"id":"1034","type":"AllLabels"},{"attributes":{},"id":"1005","type":"DataRange1d"},{"attributes":{"coordinates":null,"group":null,"items":[{"id":"1041"}]},"id":"1040","type":"Legend"},{"attributes":{"ticker":null},"id":"1036","type":"LogTickFormatter"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"field":"colors"},"hatch_alpha":{"value":0.2},"hatch_color":{"field":"colors"},"line_alpha":{"value":0.2},"line_color":{"field":"colors"},"size":{"field":"size"},"x":{"field":"Fert. Rate"},"y":{"field":"Med. Age"}},"id":"1028","type":"Scatter"},{"attributes":{"fill_alpha":{"value":0.8},"fill_color":{"field":"colors"},"hatch_alpha":{"value":0.8},"hatch_color":{"field":"colors"},"line_alpha":{"value":0.8},"line_color":{"field":"colors"},"size":{"field":"size"},"x":{"field":"Fert. Rate"},"y":{"field":"Med. Age"}},"id":"1026","type":"Scatter"},{"attributes":{"axis_label":"Fertilsrate","coordinates":null,"formatter":{"id":"1036"},"group":null,"major_label_policy":{"id":"1037"},"ticker":{"id":"1014"}},"id":"1013","type":"LogAxis"},{"attributes":{"source":{"id":"1024"}},"id":"1030","type":"CDSView"}],"root_ids":["1002"]},"title":"Bokeh Application","version":"2.4.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            const fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  const docs_json = document.getElementById('1205').textContent;
+                  const render_items = [{"docid":"b62a14c4-eb97-4b06-bb7b-a68df9635209","root_ids":["1002"],"roots":{"1002":"705971cb-066d-4454-9781-c566ca64aa80"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    let attempts = 0;
+                    const timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
